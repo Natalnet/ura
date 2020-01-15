@@ -1,0 +1,100 @@
+.container-quem-somos {
+    background: rgb(255, 255, 255);
+    height: 1050px;
+    width: 100%;
+
+    
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    background-image: url(../../../img/scholae_background2.png);
+    
+
+    
+    
+}
+
+.container-text {
+    background: rgba(255, 255, 255, 0.849);
+    height: 400px;
+    width: 620px;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    border-radius: 18px;
+    
+    font: Arial, Helvetica, sans-serif;
+}
+
+.container-text h1 {
+    display: block;
+    text-align: center;
+    font-size: 42px;
+    margin-left: 12px;
+    margin-top: 32px;
+    color: rgb(61, 98, 218);
+    
+
+    
+}
+
+.container-text p {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 3px;
+    font-size: 22px;
+    color: rgb(87, 72, 72); 
+}
+
+.button-text {
+    display: block;
+    text-align: center;
+    margin: 22px 0px 0px 0px;
+
+    font-size: 22px;
+}
+
+.container-image {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.image {
+    height: 400px;
+    width: 520px;
+    border-radius: 22px;
+}
+
+@media only screen and (max-width: 870px) {
+    .container-quem-somos {
+        flex-direction: column;
+    }
+
+    .container-text {
+        margin-top: 0px;
+        margin-left: 0px;
+
+        width: 93%;
+        height: 500px;
+    }
+
+    .container-image {
+        margin-top: 0px;
+
+    }
+
+    .image {
+        height: 280px;
+        width: 93%;
+    }
+
+}

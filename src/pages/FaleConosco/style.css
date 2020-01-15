@@ -1,0 +1,51 @@
+form#new-post {
+    
+    width: 100%;
+    max-width: 580px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #7159c1;
+    box-shadow: #7159c1 2px;
+    
+    
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title {
+      text-align: center;
+      color: #7159c1;
+  }
+  
+  .all {
+    margin-top: 3px;  
+    height: 38px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    font-size: 15px;
+  }
+
+  .msg {
+    margin-top: 3px; 
+    height: 100px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 0px 20px;
+    font-size: 15px;
+  }
+  
+  form#new-post button {
+    margin-top: 3px; 
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 0;
+    background: #7159c1;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
