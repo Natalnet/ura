@@ -37,7 +37,7 @@
     font-size: 42px;
     margin-left: 12px;
     margin-top: 32px;
-    color: rgb(61, 98, 218);
+    color: rgb(207, 53, 53);
     
 
     
@@ -69,9 +69,9 @@
 }
 
 .image {
-    height: 400px;
-    width: 520px;
-    border-radius: 22px;
+    height: 650px;
+    width: 490px;
+    
 }
 
 @media only screen and (max-width: 870px) {
@@ -84,7 +84,7 @@
         margin-left: 0px;
 
         width: 93%;
-        height: 500px;
+        height: 535px;
     }
 
     .container-image {
@@ -93,7 +93,8 @@
     }
 
     .image {
-        height: 280px;
+        margin-top: 50px;
+        height: 450px;
         width: 93%;
     }
 

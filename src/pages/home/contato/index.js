@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
-import { AwesomeButton, AwesomeButtonProgress, AwesomeButtonSocial } from 'react-awesome-button';
-import Styless from '../../../components/header/react-awesome-button-master/src/styles/themes/theme-blue';
-
-
 
 // Styles
 import './contato.scss';
 
-
-
-
-
 // Components
 
-export default class Contato_Home extends Component {
-    render() {
+export default function Contato_Home() {
+
+    function formSubmit(e) {
+        e.preventDefault()
+        alert('Enviado com sucesso')
+    }
+
+    
         return (
             <div className="contato-home-container">
 
 
                 <div className="form-contato">
 
-                    <form className="form-container">
+                    <form className="form-container" onSubmit={formSubmit}>
 
                         <h1 className="title-form">Solicite o URA na sua escola</h1>
                         
@@ -32,6 +30,7 @@ export default class Contato_Home extends Component {
                             type="text"
                             name="nome"
                             placeholder="Seu nome"
+                            required
                         />
 
                         <input
@@ -39,25 +38,28 @@ export default class Contato_Home extends Component {
                             type="text"
                             name="email"
                             placeholder="Seu email"
+                            required
                         />
                         <input
                             className="input-form-home"
                             type="text"
                             name="telefone"
                             placeholder="Telefone"
+                            required
                         />
                         <input
                             className="input-form-home"
                             type="text"
                             name="telefone"
                             placeholder="Nome da escola"
+                            required
                         />
                         <input
                             className="msg-form-home"
                             type="text"
                             name="mensagem"
                             placeholder="Mensagem"
-                            
+                            required
                         />
                         
 
@@ -70,5 +72,5 @@ export default class Contato_Home extends Component {
             </div>
         )
     }
-}
+
 
