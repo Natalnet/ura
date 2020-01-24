@@ -8,11 +8,12 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    
     
 
     background-image: url(../../../img/scholae_background2.png);
-    
+    background-position: top;
 
     
     
@@ -20,12 +21,11 @@
 
 .container-text {
     background: rgba(255, 255, 255, 0.849);
-    height: 400px;
+    height: 380px;
     width: 620px;
+    
 
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 40px;
+    
     border-radius: 18px;
     
     font: Arial, Helvetica, sans-serif;
@@ -56,9 +56,10 @@
 .button-text {
     display: block;
     text-align: center;
-    margin: 22px 0px 0px 0px;
+    margin: 12px 0px 18px 0px;
+    
 
-    font-size: 22px;
+    
 }
 
 .container-image {
@@ -77,25 +78,33 @@
 @media only screen and (max-width: 870px) {
     .container-quem-somos {
         flex-direction: column;
+        justify-content: space-around;
+        
+
+        height: 1250px;
     }
 
     .container-text {
-        margin-top: 0px;
-        margin-left: 0px;
 
-        width: 93%;
-        height: 535px;
+
+        width: 90%;
+        height: 550px;
+
+
+        
+        
     }
 
     .container-image {
-        margin-top: 0px;
+        
 
     }
 
     .image {
-        margin-top: 50px;
+        
         height: 450px;
-        width: 93%;
+        width: 300px;
     }
 
 }
+

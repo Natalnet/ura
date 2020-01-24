@@ -18,10 +18,14 @@ export default function Contato_Home() {
 
 
                 <div className="form-contato">
+                    <div className="form-title-container-home">
+                        <h1 className="title-form">Solicite o URA na sua escola</h1>
+                    </div>
+                    
 
                     <form className="form-container" onSubmit={formSubmit}>
 
-                        <h1 className="title-form">Solicite o URA na sua escola</h1>
+                        
                         
                         
                         
