@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/ura/static/css/main.5fe554b7.chunk.css",
+    "main.js": "/ura/static/js/main.8d7ca4f3.chunk.js",
+    "main.js.map": "/ura/static/js/main.8d7ca4f3.chunk.js.map",
+    "runtime-main.js": "/ura/static/js/runtime-main.c73d4caa.js",
+    "runtime-main.js.map": "/ura/static/js/runtime-main.c73d4caa.js.map",
+    "static/js/2.5ed069d2.chunk.js": "/ura/static/js/2.5ed069d2.chunk.js",
+    "static/js/2.5ed069d2.chunk.js.map": "/ura/static/js/2.5ed069d2.chunk.js.map",
+    "index.html": "/ura/index.html",
+    "precache-manifest.a68a8d18b1058de8d89f555492d9728c.js": "/ura/precache-manifest.a68a8d18b1058de8d89f555492d9728c.js",
+    "service-worker.js": "/ura/service-worker.js",
+    "static/css/main.5fe554b7.chunk.css.map": "/ura/static/css/main.5fe554b7.chunk.css.map",
+    "static/media/01.JPG": "/ura/static/media/01.1126c0dc.JPG",
+    "static/media/02.JPG": "/ura/static/media/02.1aebf31e.JPG",
+    "static/media/03.JPG": "/ura/static/media/03.73102c1b.JPG",
+    "static/media/04.JPG": "/ura/static/media/04.ed4e1098.JPG",
+    "static/media/facebook.png": "/ura/static/media/facebook.8f5ce275.png",
+    "static/media/logo-ura.png": "/ura/static/media/logo-ura.332ca720.png",
+    "static/media/wallpaper.scss": "/ura/static/media/mainwallpaper.adc1857e.jpg",
+    "static/media/metodologia-f.png": "/ura/static/media/metodologia-f.1f2b4384.png",
+    "static/media/desenvolvimento.scss": "/ura/static/media/scholae_background.59a01ebd.png",
+    "static/media/contato.scss": "/ura/static/media/scholae_background2.a7eb4192.png",
+    "static/media/school.svg": "/ura/static/media/school.d83f15b8.svg",
+    "static/media/study.svg": "/ura/static/media/study.855adeac.svg",
+    "static/media/teacher.svg": "/ura/static/media/teacher.fd0dee78.svg",
+    "static/media/training.svg": "/ura/static/media/training.e44c8f30.svg",
+    "static/media/twitter.png": "/ura/static/media/twitter.0251d8ee.png",
+    "static/media/ura_vinheta.mp4": "/ura/static/media/ura_vinheta.d7fb4c83.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c73d4caa.js",
+    "static/js/2.5ed069d2.chunk.js",
+    "static/css/main.5fe554b7.chunk.css",
+    "static/js/main.8d7ca4f3.chunk.js"
+  ]
+}
