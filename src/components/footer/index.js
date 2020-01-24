@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 // Styles 
@@ -25,11 +25,11 @@ export default class Footer extends Component {
                     <div className="footer-logos">
 
                         <div className="facebook-content">
-                            <Link to="https://facebook.com" className="link"><img src={Facebook} className="facebook-logo" /></Link>
+                            <Link to="https://facebook.com" className="link"><img alt="link para facebook do Um Robô por Aluno" src={Facebook} className="facebook-logo" /></Link>
                         </div>
 
                         <div className="facebook-content">
-                           <Link to="https://twitter.com" className="link"><img src={Instagram} className="facebook-logo" /></Link>
+                           <Link to="https://twitter.com" className="link"  ><img alt="link para twitter do Um Robô por Aluno" src={Instagram} className="facebook-logo" /></Link>
                         </div>
 
                        

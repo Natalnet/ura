@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import AwesomeSlider from 'react-awesome-slider';
 import AutoplaySlider from './react-awesome-slider/src/hoc/autoplay/index';
+// eslint-disable-next-line no-unused-vars
 import AwesomeSliderStyles from './react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss'
 
 import './react-awesome-slider/src/styles'

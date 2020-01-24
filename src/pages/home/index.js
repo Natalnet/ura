@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 
 import Wallpaper from './wallpaper/index';
 import QuemSomos from './quem_somos/index';
+// eslint-disable-next-line no-unused-vars
 import Carousel from './carousel/index';
 import Contador from './contador/index';
-import Parceiros from './parceiros/index';
 import Contato_Home from './contato/index';
 
 

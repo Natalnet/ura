@@ -21,7 +21,7 @@ export default class Contador extends Component {
                     <div className="container-study">
 
                         <div className="study-logo">
-                           <img src={Study}></img>
+                           <img src={Study} alt="Estudar"></img>
                         </div>
 
                         <div className="study-text">
@@ -39,7 +39,7 @@ export default class Contador extends Component {
                     <div className="container-school"> 
 
                             <div className="school-logo">
-                                <img src={Training}></img>
+                                <img src={Training} alt="Treinar" ></img>
                             </div>
 
                             <div className="school-text">
@@ -55,7 +55,7 @@ export default class Contador extends Component {
                     <div className="container-training">
 
                         <div className="training-logo">
-                            <img src={Teacher}></img>
+                            <img src={Teacher} alt="Professor" ></img>
                         </div>
 
                         <div className="training-text">
@@ -75,7 +75,7 @@ export default class Contador extends Component {
                     <div className="container-teacher">
 
                         <div className="teacher-logo">
-                            <img src={School}></img>
+                            <img src={School} alt="Escola" ></img>
                         </div>
 
                         <div className="teacher-text">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react' 
-import { AwesomeButton, AwesomeButtonProgress, AwesomeButtonSocial } from 'react-awesome-button';
-import { HashRouter, Route, Link } from "react-router-dom";
+import { AwesomeButton } from 'react-awesome-button';
+import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
 import Styless from './react-awesome-button-master/src/styles/themes/theme-blue/index';
 
 
@@ -8,11 +9,6 @@ import Styless from './react-awesome-button-master/src/styles/themes/theme-blue/
 import './header.scss'
 
 import logo from '../../img/logo-ura.png'
-import logoFacebook from '../../img/logo-facebookv2.png'
-import logoInstagram from '../../img/logo-instagramv2.png'
-import logoGithub from '../../img/logo-githubv2.png'
-
-
 
 export default class Header extends Component {
     render() {
