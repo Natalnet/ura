@@ -2,8 +2,9 @@
   "name": "front_end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://projeto-ura.github.io/ura",
+  "homepage": "https://natalnet.github.io/ura",
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "gh-pages": "^2.1.1",
     "node-sass": "^4.13.0",

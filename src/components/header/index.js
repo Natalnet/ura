@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import Styless from './react-awesome-button-master/src/styles/themes/theme-blue/index';
 
-
-
 import './header.scss'
 
 import logo from '../../img/logo-ura.png'
@@ -21,7 +19,6 @@ export default class Header extends Component {
                             <Link to="/ura/" className="a-logo"><img src={logo} className="img-logo" alt=""></img></Link>
                         </div>
 
-
                         <nav className="main-nav">
                             <ul className="ul-nav">
                                 <li><Link to="/ura/quem-somos"><AwesomeButton type="primary" size="medium"  >Quem Somos</AwesomeButton></Link></li>
@@ -32,12 +29,8 @@ export default class Header extends Component {
                             </ul>
                         </nav>
 
-                        
-                        
-
                     </div>
 
-                    
                 </header>    
         )
     }
