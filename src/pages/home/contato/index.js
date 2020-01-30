@@ -60,7 +60,7 @@ export default function Contato_Home() {
                             className="msg-form-home"
                             type="text"
                             name="mensagem"
-                            placeholder="Mensagem"
+                            placeholder="Mensagem + celular whatsapp para contato"
                             onChange={e => setMensagem(e.target.value)}
                             required
                         />
