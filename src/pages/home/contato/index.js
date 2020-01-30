@@ -10,18 +10,24 @@ export default function Contato_Home() {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
+    const [celular, setCelular] = useState('');
+    const [nomeEscola, setNomeEscola] = useState('')
 
       function formSubmit(e) {
         e.preventDefault()
 
+
          api.post('/send-email', {
             email: email,
 	        nome: nome,
-	        mensagem: mensagem
+            mensagem: `Mensagem: ${mensagem} 
+                       Celular: ${celular} 
+                       email: ${email}
+                       Nome da escola: ${nomeEscola}`,
             
         });
 
-        alert('Mensagem enviada, entraremos em contato em breve!');
+        alert(`Recebemos sua mensagem ${nome}, entraremos em contato em breve!`);
 
     }
     
@@ -54,13 +60,31 @@ export default function Contato_Home() {
                             onChange={e => setNome(e.target.value)}
                         />
 
+                        <input
+                            className="input-form-home"
+                            type="text"
+                            name="escola"
+                            placeholder="Nome da escola"
+                            onChange={e => setNomeEscola(e.target.value)}
+                            required
+                        />
+
+                        <input
+                            className="input-form-home"
+                            type="text"
+                            name="celular"
+                            placeholder="Celular whatsapp para contato"
+                            onChange={e => setCelular(e.target.value)}
+                            required
+                        />
+
                         
                         
                         <input
                             className="msg-form-home"
                             type="text"
                             name="mensagem"
-                            placeholder="Mensagem + celular whatsapp para contato"
+                            placeholder="Mensagem"
                             onChange={e => setMensagem(e.target.value)}
                             required
                         />
