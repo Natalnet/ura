@@ -96,8 +96,10 @@ label {
 @media only screen and (max-width: 870px) {
     .header-logo {
         box-sizing: border-box;
+
+        margin-top: 12px;
         
-        margin-top: 225px
+        
         
     }
 
@@ -107,12 +109,13 @@ label {
     
 
     .main-header {
-        height: 320px;
+        height: 80px;
     }
 
     .main-nav {
-        text-align: center;
+        
         width: 100%;
+        display: none;
         
         
     }
@@ -127,7 +130,7 @@ label {
     }
 
     .main-header {
-        position: absolute;
+        position: fixed;
     }
 
     
