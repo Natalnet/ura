@@ -10,7 +10,6 @@ export default function Contato_Home() {
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [mensagem, setMensagem] = useState('');
-    const [celular, setCelular] = useState('');
     const [nomeEscola, setNomeEscola] = useState('')
 
       function formSubmit(e) {
@@ -21,7 +20,6 @@ export default function Contato_Home() {
             email: email,
 	        nome: nome,
             mensagem: `Mensagem: ${mensagem} 
-                       Celular: ${celular} 
                        email: ${email}
                        Nome da escola: ${nomeEscola}`,
             
@@ -68,17 +66,6 @@ export default function Contato_Home() {
                             onChange={e => setNomeEscola(e.target.value)}
                             required
                         />
-
-                        <input
-                            className="input-form-home"
-                            type="text"
-                            name="celular"
-                            placeholder="Celular whatsapp para contato"
-                            onChange={e => setCelular(e.target.value)}
-                            required
-                        />
-
-                        
                         
                         <input
                             className="msg-form-home"
