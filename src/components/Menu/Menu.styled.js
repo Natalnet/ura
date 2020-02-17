@@ -12,7 +12,7 @@ export const StyledMenu = styled.nav`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background: ${({ theme }) => theme.primaryLight};
   max-height: 100vh;
   text-align: left;
