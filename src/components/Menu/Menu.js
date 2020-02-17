@@ -32,12 +32,6 @@ const Menu = ({ open, setOpen }) => {
         </AwesomeButton>
       </Link>
 
-      <Link to="/ura/noticiais" onClick={() => setOpen(!open)}>
-        <AwesomeButton type="primary" size="large">
-          Notíciais
-        </AwesomeButton>
-      </Link>
-
       <Link to="/ura/metologia" onClick={() => setOpen(!open)}>
         <AwesomeButton type="primary" size="large">
           Metologia

@@ -14,7 +14,7 @@ export const StyledMenu = styled.nav`
   flex-direction: column;
   justify-content: center;
   background: ${({ theme }) => theme.primaryLight};
-  max-height: 100vh;
+  height: 100vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
