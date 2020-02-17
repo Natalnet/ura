@@ -1,15 +1,18 @@
-import background from '../../img/scholae_background.png'
+import background from "../../img/scholae_background.png";
 //Menu.styled.js
-import styled from 'styled-components'
+import styled from "styled-components";
 // Menu -> index.js
-export { default } from './Menu'
-
-
+export { default } from "./Menu";
 
 // eslint-disable-next-line import/first
 export const StyledMenu = styled.nav`
+  img {
+    height: 15vh;
+  }
+
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   background: ${({ theme }) => theme.primaryLight};
   height: 100vh;
   text-align: left;
@@ -19,11 +22,10 @@ export const StyledMenu = styled.nav`
   left: 0;
   background-image: url(${background});
   transition: transform 0.3s ease-in-out;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
 
-  
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    width: 100%;
+    width: 80%;
   }
 
   a {
@@ -36,7 +38,7 @@ export const StyledMenu = styled.nav`
     color: ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
-    
+
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
@@ -46,4 +48,4 @@ export const StyledMenu = styled.nav`
       color: ${({ theme }) => theme.primaryHover};
     }
   }
-`
+`;
