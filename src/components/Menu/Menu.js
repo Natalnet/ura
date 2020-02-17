@@ -8,7 +8,6 @@ import { StyledMenu } from "./Menu.styled";
 // Styles
 // eslint-disable-next-line no-unused-vars
 import buttonStyle from "../header/react-awesome-button-master/src/styles/themes/theme-blue/index";
-import "./Menu.css";
 
 // Media
 
