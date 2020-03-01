@@ -1,16 +1,19 @@
-import React, { Component } from 'react';
+import React from "react";
 
 // Styles
-import './quem-somos.scss';
+//import './quem-somos.scss';
+import { QuemSomoss } from "./styled.quem-somos";
 
 // Components
 
-import Desenvolvimento from '../desenvolvimento/index';
+//import Desenvolvimento from '../desenvolvimento/index';
 
-export default class QuemSomos extends Component {
-    render() {
-        return (
-            <Desenvolvimento />
-        )
-    }
+export default function QuemSomos() {
+  return (
+    <>
+      <QuemSomoss>
+        <div></div>
+      </QuemSomoss>
+    </>
+  );
 }

@@ -1,90 +1,80 @@
-import React, { useState } from 'react';
-import api from '../../../services/api';
+import React, { useState } from "react";
+import api from "../../../services/api";
 
 // Styles
-import './contato.scss';
+import "./contato.scss";
 
 // Components
 
 export default function Contato_Home() {
-    const [nome, setNome] = useState('');
-    const [email, setEmail] = useState('');
-    const [mensagem, setMensagem] = useState('');
-    const [nomeEscola, setNomeEscola] = useState('')
+  const [nome, setNome] = useState("");
+  const [email, setEmail] = useState("");
+  const [mensagem, setMensagem] = useState("");
+  const [nomeEscola, setNomeEscola] = useState("");
 
-      function formSubmit(e) {
-        e.preventDefault()
+  async function formSubmit(e) {
+    e.preventDefault();
 
+    await api.post("/send-email", {
+      email: email,
+      nome: nome,
+      mensagem: `Mensagem: ${mensagem}
+                 Email: ${email}
+                 Nome da escola: ${nomeEscola}`
+    });
 
-         api.post('/send-email', {
-            email: email,
-	        nome: nome,
-            mensagem: `Mensagem: ${mensagem} 
-                       email: ${email}
-                       Nome da escola: ${nomeEscola}`,
-            
-        });
+    alert(`Recebemos sua mensagem ${nome}, entraremos em contato em breve!`);
+  }
 
-        alert(`Recebemos sua mensagem ${nome}, entraremos em contato em breve!`);
+  return (
+    <div className="contato-home-container">
+      <div className="form-contato">
+        <div className="form-title-container-home">
+          <h1 className="title-form">Solicite o URA na sua escola!</h1>
+        </div>
 
-    }
-    
-        return (
-            <div className="contato-home-container">
+        <form className="form-container" onSubmit={formSubmit}>
+          <input
+            className="input-form-home"
+            type="text"
+            name="email"
+            placeholder="Seu email"
+            onChange={e => setEmail(e.target.value)}
+            required
+          />
 
+          <input
+            className="input-form-home"
+            type="text"
+            name="nome"
+            placeholder="Seu nome"
+            required
+            onChange={e => setNome(e.target.value)}
+          />
 
-                <div className="form-contato">
-                    <div className="form-title-container-home">
-                        <h1 className="title-form">Solicite o URA na sua escola!</h1>
-                    </div>
-                    
-                    <form className="form-container" onSubmit={formSubmit}>
+          <input
+            className="input-form-home"
+            type="text"
+            name="escola"
+            placeholder="Nome da escola"
+            onChange={e => setNomeEscola(e.target.value)}
+            required
+          />
 
-                        <input
-                            className="input-form-home"
-                            type="text"
-                            name="email"
-                            placeholder="Seu email"
-                            onChange={e => setEmail(e.target.value)}
-                            required
-                        />
+          <input
+            className="msg-form-home"
+            type="text"
+            name="mensagem"
+            placeholder="Mensagem"
+            onChange={e => setMensagem(e.target.value)}
+            required
+          />
 
-                        <input
-                            className="input-form-home"
-                            type="text"
-                            name="nome"
-                            placeholder="Seu nome"
-                            required
-                            onChange={e => setNome(e.target.value)}
-                        />
-
-                        <input
-                            className="input-form-home"
-                            type="text"
-                            name="escola"
-                            placeholder="Nome da escola"
-                            onChange={e => setNomeEscola(e.target.value)}
-                            required
-                        />
-                        
-                        <input
-                            className="msg-form-home"
-                            type="text"
-                            name="mensagem"
-                            placeholder="Mensagem"
-                            onChange={e => setMensagem(e.target.value)}
-                            required
-                        />
-                        
-
-                        <button type="submit" className="btn-enviar-form-home">Enviar</button>
-                    </form>
-                </div>
-
-
-
-            </div>
-        )
-    }
-
-
+          <button type="submit" className="btn-enviar-form-home">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
