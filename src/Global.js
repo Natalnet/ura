@@ -1,5 +1,5 @@
 // global.js
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -15,6 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
   *, *::after, *::before {
     box-sizing: border-box;
@@ -27,4 +28,4 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     text-rendering: optimizeLegibility;
   }
-  `
+  `;

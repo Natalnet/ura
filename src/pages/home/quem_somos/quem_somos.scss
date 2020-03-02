@@ -1,110 +1,81 @@
 .container-quem-somos {
-    background: rgb(255, 255, 255);
-    height: 1050px;
-    width: 100%;
+  background: rgb(255, 255, 255);
+  height: 1050px;
+  width: 100%;
 
-    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    
-    
-
-    background-image: url(../../../img/scholae_background2.png);
-    background-position: top;
-
-    
-    
+  background-image: url(../../../img/scholae_background2.png);
+  background-position: top;
 }
 
 .container-text {
-    background: rgba(255, 255, 255, 0.849);
-    height: 380px;
-    width: 620px;
-    
+  background: rgba(255, 255, 255, 0.849);
+  height: 380px;
+  width: 620px;
 
-    
-    border-radius: 18px;
-    
-    font: Arial, Helvetica, sans-serif;
+  border-radius: 18px;
+
+  font: Arial, Helvetica, sans-serif;
 }
 
 .container-text h1 {
-    display: block;
-    text-align: center;
-    font-size: 42px;
-    margin-left: 12px;
-    margin-top: 32px;
-    color: rgb(207, 53, 53);
-    
-
-    
+  display: block;
+  text-align: center;
+  font-size: 42px;
+  margin-left: 12px;
+  margin-top: 32px;
+  color: rgb(207, 53, 53);
 }
 
 .container-text p {
-    display: block;
-    text-align: center;
-    margin-top: 12px;
-    margin-left: 12px;
-    margin-right: 3px;
-    font-size: 22px;
-    color: rgb(87, 72, 72); 
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 12px;
+  margin-right: 3px;
+  font-size: 22px;
+  color: rgb(87, 72, 72);
 }
 
 .button-text {
-    display: block;
-    text-align: center;
-    margin: 12px 0px 18px 0px;
-    
-
-    
+  display: block;
+  text-align: center;
+  margin: 12px 0px 18px 0px;
 }
 
 .container-image {
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .image {
-    height: 650px;
-    width: 490px;
-    
+  width: 390px;
+  height: 565px;
 }
 
 @media only screen and (max-width: 870px) {
-    .container-quem-somos {
-        flex-direction: column;
-        justify-content: space-around;
-        
+  .container-quem-somos {
+    flex-direction: column;
+    justify-content: space-around;
 
-        height: 1250px;
-    }
+    height: 1250px;
+  }
 
-    .container-text {
+  .container-text {
+    width: 90%;
+    height: 550px;
+  }
 
+  .container-image {
+  }
 
-        width: 90%;
-        height: 550px;
-
-
-        
-        
-    }
-
-    .container-image {
-        
-
-    }
-
-    .image {
-        
-        height: 450px;
-        width: 300px;
-    }
-
+  .image {
+    height: 450px;
+    width: 300px;
+  }
 }
-
