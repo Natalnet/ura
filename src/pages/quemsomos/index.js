@@ -6,15 +6,32 @@ import { QuemSomoss } from "./styled.quem-somos";
 import AutoplaySlider from "../../pages/home/carousel/react-awesome-slider/src/hoc/autoplay/index";
 import AwesomeSliderStyle from "../../pages/home/carousel/react-awesome-slider/src/styled/fold-out-animation/fold-out-animation.scss";
 import "../../pages/home/carousel/react-awesome-slider/src/styles";
+import styles from "./styles.scss";
 
 // Media
+import car1 from "./car1.jpg";
+import car3 from "./car3.jpg";
+import car4 from "./car4.jpg";
+import car5 from "./car5.jpg";
 
 export default function QuemSomos() {
   return (
     <>
       <QuemSomoss>
         <div className="quem-somos-main-containerr">
-          <div className="carousel-quem-somosss"></div>
+          <div className="carousel-quem-somosss">
+            <AutoplaySlider
+              play={true}
+              cancelOnInteraction={false}
+              interval={2800}
+              cssModule={styles}
+            >
+              <div data-src={car1} />
+              <div data-src={car3} />
+              <div data-src={car4} />
+              <div data-src={car5} />
+            </AutoplaySlider>
+          </div>
 
           <div className="quem-somos-main-text">
             <p className="quem-somos-text-par">

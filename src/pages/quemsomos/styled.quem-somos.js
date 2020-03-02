@@ -12,4 +12,9 @@ export const QuemSomoss = styled.div`
 
   background-image: url(${Background});
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 1100px) {
+    height: 2000px;
+    background-repeat: repeat;
+  }
 `;
