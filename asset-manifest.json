@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/ura/static/css/main.029f21ae.chunk.css",
-    "main.js": "/ura/static/js/main.c76f3790.chunk.js",
-    "main.js.map": "/ura/static/js/main.c76f3790.chunk.js.map",
+    "main.css": "/ura/static/css/main.c9865f0c.chunk.css",
+    "main.js": "/ura/static/js/main.02a99a0a.chunk.js",
+    "main.js.map": "/ura/static/js/main.02a99a0a.chunk.js.map",
     "runtime-main.js": "/ura/static/js/runtime-main.c73d4caa.js",
     "runtime-main.js.map": "/ura/static/js/runtime-main.c73d4caa.js.map",
-    "static/js/2.38cf4e22.chunk.js": "/ura/static/js/2.38cf4e22.chunk.js",
-    "static/js/2.38cf4e22.chunk.js.map": "/ura/static/js/2.38cf4e22.chunk.js.map",
+    "static/js/2.0633e198.chunk.js": "/ura/static/js/2.0633e198.chunk.js",
+    "static/js/2.0633e198.chunk.js.map": "/ura/static/js/2.0633e198.chunk.js.map",
     "index.html": "/ura/index.html",
-    "precache-manifest.f1bf6017e72ebcef8628ce315e1e71af.js": "/ura/precache-manifest.f1bf6017e72ebcef8628ce315e1e71af.js",
+    "precache-manifest.ce55be278e0ed7e9cd1cd8f06e2be5d9.js": "/ura/precache-manifest.ce55be278e0ed7e9cd1cd8f06e2be5d9.js",
     "service-worker.js": "/ura/service-worker.js",
-    "static/css/main.029f21ae.chunk.css.map": "/ura/static/css/main.029f21ae.chunk.css.map",
+    "static/css/main.c9865f0c.chunk.css.map": "/ura/static/css/main.c9865f0c.chunk.css.map",
     "static/media/01.JPG": "/ura/static/media/01.1126c0dc.JPG",
     "static/media/02.JPG": "/ura/static/media/02.1aebf31e.JPG",
     "static/media/03.JPG": "/ura/static/media/03.73102c1b.JPG",
     "static/media/04.JPG": "/ura/static/media/04.ed4e1098.JPG",
+    "static/media/car1.jpg": "/ura/static/media/car1.e0d1e5c7.jpg",
+    "static/media/car3.jpg": "/ura/static/media/car3.1ab2c99d.jpg",
+    "static/media/car4.jpg": "/ura/static/media/car4.56e27115.jpg",
+    "static/media/car5.jpg": "/ura/static/media/car5.b6bda92d.jpg",
     "static/media/facebook.png": "/ura/static/media/facebook.8f5ce275.png",
     "static/media/logo-ura.png": "/ura/static/media/logo-ura.332ca720.png",
     "static/media/wallpaper.scss": "/ura/static/media/mainwallpaper.adc1857e.jpg",
@@ -30,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c73d4caa.js",
-    "static/js/2.38cf4e22.chunk.js",
-    "static/css/main.029f21ae.chunk.css",
-    "static/js/main.c76f3790.chunk.js"
+    "static/js/2.0633e198.chunk.js",
+    "static/css/main.c9865f0c.chunk.css",
+    "static/js/main.02a99a0a.chunk.js"
   ]
 }
