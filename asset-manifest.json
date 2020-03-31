@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ura/static/css/main.c9865f0c.chunk.css",
-    "main.js": "/ura/static/js/main.02a99a0a.chunk.js",
-    "main.js.map": "/ura/static/js/main.02a99a0a.chunk.js.map",
+    "main.css": "/ura/static/css/main.d4b33115.chunk.css",
+    "main.js": "/ura/static/js/main.8b1fb408.chunk.js",
+    "main.js.map": "/ura/static/js/main.8b1fb408.chunk.js.map",
     "runtime-main.js": "/ura/static/js/runtime-main.c73d4caa.js",
     "runtime-main.js.map": "/ura/static/js/runtime-main.c73d4caa.js.map",
-    "static/js/2.0633e198.chunk.js": "/ura/static/js/2.0633e198.chunk.js",
-    "static/js/2.0633e198.chunk.js.map": "/ura/static/js/2.0633e198.chunk.js.map",
+    "static/js/2.3791d53e.chunk.js": "/ura/static/js/2.3791d53e.chunk.js",
+    "static/js/2.3791d53e.chunk.js.map": "/ura/static/js/2.3791d53e.chunk.js.map",
     "index.html": "/ura/index.html",
-    "precache-manifest.ce55be278e0ed7e9cd1cd8f06e2be5d9.js": "/ura/precache-manifest.ce55be278e0ed7e9cd1cd8f06e2be5d9.js",
+    "precache-manifest.effc829c3d50440fb3c29ee489c6b800.js": "/ura/precache-manifest.effc829c3d50440fb3c29ee489c6b800.js",
     "service-worker.js": "/ura/service-worker.js",
-    "static/css/main.c9865f0c.chunk.css.map": "/ura/static/css/main.c9865f0c.chunk.css.map",
+    "static/css/main.d4b33115.chunk.css.map": "/ura/static/css/main.d4b33115.chunk.css.map",
     "static/media/01.JPG": "/ura/static/media/01.1126c0dc.JPG",
     "static/media/02.JPG": "/ura/static/media/02.1aebf31e.JPG",
     "static/media/03.JPG": "/ura/static/media/03.73102c1b.JPG",
@@ -23,7 +23,7 @@
     "static/media/logo-ura.png": "/ura/static/media/logo-ura.332ca720.png",
     "static/media/wallpaper.scss": "/ura/static/media/mainwallpaper.adc1857e.jpg",
     "static/media/metodologia-f.png": "/ura/static/media/metodologia-f.1f2b4384.png",
-    "static/media/desenvolvimento.scss": "/ura/static/media/scholae_background.59a01ebd.png",
+    "static/media/scholae_background.png": "/ura/static/media/scholae_background.59a01ebd.png",
     "static/media/contato.scss": "/ura/static/media/scholae_background2.a7eb4192.png",
     "static/media/school.svg": "/ura/static/media/school.d83f15b8.svg",
     "static/media/study.svg": "/ura/static/media/study.855adeac.svg",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c73d4caa.js",
-    "static/js/2.0633e198.chunk.js",
-    "static/css/main.c9865f0c.chunk.css",
-    "static/js/main.02a99a0a.chunk.js"
+    "static/js/2.3791d53e.chunk.js",
+    "static/css/main.d4b33115.chunk.css",
+    "static/js/main.8b1fb408.chunk.js"
   ]
 }
