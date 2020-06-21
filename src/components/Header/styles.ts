@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
+interface Props {
+  background?: string;
+  scrool: number
+}
+
 export const Container = styled.div`
   width: 100%;
   position: fixed;
-  border-bottom: 2px solid #ddd;
 `
 
-export const Content = styled.div`
-  background: rgba(255, 255, 255);
+export const Content = styled.div<Props>`
+  background: ${(p) => p.scrool === 0 ? 'red' : 'blue'};
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

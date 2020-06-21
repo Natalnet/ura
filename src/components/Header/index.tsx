@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Container, Content } from './styles'
 
@@ -7,8 +7,13 @@ import logo from '../../assets/logo-ura.png'
 import Button from '../Button'
 
 const Header: React.FC = () => {
+  const [scroolNumber, setScroolNumber] = useState(0)
+  useEffect(() => {
+    setScroolNumber(window.scrollY)
+    console.log(scroolNumber)
+  }, [scroolNumber])
   return <Container>
-    <Content>
+    <Content scrool={scroolNumber} >
       <nav>
         <img src={logo} alt="logo do URA" />
 
