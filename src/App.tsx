@@ -1,9 +1,13 @@
 import React from 'react'
 
-// import { Container } from './styles';
+import Header from './components/Header'
+
+import './global.scss'
 
 const App: React.FC = () => {
-  return <h1>Hello World</h1>
+  return <>
+    <Header />
+  </>
 }
 
 export default App

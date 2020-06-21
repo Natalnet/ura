@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #3474eb;
+  --title-color: #322153;
+  --text-color: #6C6C80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+  
+}
+*:focus {
+  outline: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background: #ccc;
+  height: 1500px;
+}
+body, input, button {
+  font: 14px 'Robto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button {
+  cursor: pointer;
+}
