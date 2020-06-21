@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   position: fixed;
-  box-shadow: 4px red;
+  border-bottom: 2px solid #ddd;
 `
 
 export const Content = styled.div`
@@ -20,7 +20,7 @@ export const Content = styled.div`
     align-items: center;
     margin: 0 auto;
     img {
-      height: 80px;
+      height: 105px;
     }
   }
 
