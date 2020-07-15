@@ -25,7 +25,7 @@ export default class Footer extends Component {
                     <div className="footer-logos">
 
                         <div className="facebook-content">
-                            <Link to="https://facebook.com" className="link"><img alt="link para facebook do Um Robô por Aluno" src={Facebook} className="facebook-logo" /></Link>
+                            <Link to="https://www.facebook.com/URAUFRN" className="link"><img alt="link para facebook do Um Robô por Aluno" src={Facebook} className="facebook-logo" /></Link>
                         </div>
 
                         <div className="facebook-content">
