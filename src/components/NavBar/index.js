@@ -8,7 +8,7 @@ import MobileMenu from '../MobileMenu'
 // import { FaArrowRight } from 'react-icons/fa'
 
 function Navbar() {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
 
   return (
     <DropdownProvider>

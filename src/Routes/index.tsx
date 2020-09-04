@@ -1,9 +1,9 @@
 import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import Home from '../pages/Home/index.js'
+import Home from "../pages/Home";
 
-const Routes = () => {
+const Routes: React.FC = () => {
   return (
     <BrowserRouter>
       <Route component={Home} path="/" exact />
