@@ -130,7 +130,7 @@ export const Card = styled(motion.li)`
 
 export const EnterpriseAbout = styled.div`
   width: 100%;
-  background: #c7e466;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -138,7 +138,7 @@ export const EnterpriseAbout = styled.div`
   padding: 100px 255px;
 
   > h1 {
-    color: #584e30;
+    color: #403b3b;
     font-size: 48px;
     text-transform: uppercase;
     text-align: center;
@@ -147,14 +147,14 @@ export const EnterpriseAbout = styled.div`
   }
 
   > hr {
-    border: 3px solid #584e30;
+    border: 3px solid #403b3b;
     border-radius: 15px;
     width: 10%;
     margin-bottom: 42px;
   }
 
   > p {
-    color: #584e30;
+    color: #403b3b;
     font-size: 26px;
     text-align: justify;
     letter-spacing: 3px;
@@ -178,7 +178,7 @@ export const FooterCard = styled(motion.div)`
   height: 100px;
 
   > strong {
-    color: #584e30;
+    color: #403b3b;
     text-transform: uppercase;
     font-weight: bold;
     margin-bottom: 12px;
