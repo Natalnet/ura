@@ -31,7 +31,7 @@ export const LadingPage = styled(motion.aside)`
   }
 
   > h1 {
-    color: #efeeef;
+    color: #403b3b;
     text-transform: uppercase;
     font-size: 62px;
     margin-bottom: 8px;
@@ -39,14 +39,14 @@ export const LadingPage = styled(motion.aside)`
   }
 
   > hr {
-    border: 3px solid #efeeef;
+    border: 3px solid #403b3b;
     border-radius: 15px;
     width: 10%;
     margin-bottom: 42px;
   }
 
   > button {
-    width: 380px;
+    width: 330px;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -55,11 +55,32 @@ export const LadingPage = styled(motion.aside)`
     background: #d35dcf;
     border-radius: 25px;
 
+    &:hover {
+      > img {
+        transition: opacity 0.2s;
+        opacity: 1;
+      }
+
+      > a {
+        transition: margin-right 0.2s;
+        margin-right: 12px;
+        margin-left: 0px;
+      }
+    }
+
     > a {
+      transition: margin-right 0.2s;
       color: #fff;
       font-weight: bold;
       font-size: 20px;
-      margin-right: 12px;
+      margin-left: 20px;
+    }
+
+    > img {
+      width: 25px;
+      transition: opacity 0.2s;
+      height: 25px;
+      opacity: 0;
     }
   }
 `;
@@ -85,7 +106,7 @@ export const Card = styled(motion.li)`
 
   > strong {
     font-size: 26px;
-    color: #efeeef;
+    color: #403b3b;
     text-align: center;
   }
 
@@ -97,7 +118,7 @@ export const Card = styled(motion.li)`
 
   > p {
     text-align: center;
-    color: #efeeef;
+    color: #403b3b;
     font-size: 22px;
   }
 `;

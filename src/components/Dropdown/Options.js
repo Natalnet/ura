@@ -1,10 +1,24 @@
-import React, { useRef, useState, useContext, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef, useState, useContext, useEffect } from "react";
+import { motion } from "framer-motion";
 
-import { useDimensions } from './dimensions';
-import { Context } from './Provider';
+import { useDimensions } from "./dimensions";
+import { Context } from "./Provider";
 
 let lastOptionId = 0;
+
+const itemAnimationUpY = {
+  hidden: { x: 0, y: 500, opacity: 0 },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 export function DropdownOption({ name, content: Content, backgroundHeight }) {
   const idRef = useRef(++lastOptionId);
@@ -85,6 +99,9 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
       onTouchStart={handleTouch}
       onFocus={handleOpen}
       onBlur={handleClose}
+      variants={itemAnimationUpY}
+      initial="hidden"
+      animate="visible"
     >
       {name}
     </motion.button>

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useRef, useCallback } from "react";
+import { Link, LinkProps } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FiInstagram, FiFacebook, FiMail, FiLogIn } from "react-icons/fi";
+import { FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
 
 import Navbar from "../../components/NavBar";
 import Layout from "../../components/Layout";
@@ -13,6 +13,7 @@ import smileImg from "../../assets/smile.png";
 import studyImg from "../../assets/study.svg";
 import trainingImg from "../../assets/training.svg";
 import enterpriseLogo from "../../assets/school.svg";
+import filogin from "../../assets/filogin.svg";
 
 import {
   Container,
@@ -34,7 +35,7 @@ const itemAnimationUpY = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.6,
+      delay: 0.2,
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
@@ -42,13 +43,13 @@ const itemAnimationUpY = {
 };
 
 const itemAnimationDownY = {
-  hidden: { x: 0, y: -100, opacity: 0 },
+  hidden: { x: 0, y: -200, opacity: 0 },
   visible: {
     x: 0,
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.6,
+      delay: 0.2,
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
@@ -56,13 +57,13 @@ const itemAnimationDownY = {
 };
 
 const itemAnimationLeftX = {
-  hidden: { x: 100, y: 0, opacity: 0 },
+  hidden: { x: 200, y: 0, opacity: 0 },
   visible: {
     x: 0,
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.6,
+      delay: 0.2,
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
@@ -76,7 +77,7 @@ const itemAnimationRightX = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.6,
+      delay: 0.2,
       when: "beforeChildren",
       staggerChildren: 0.1,
     },
@@ -84,6 +85,12 @@ const itemAnimationRightX = {
 };
 
 const Home: React.FC = () => {
+  const linkButtonRef = useRef<HTMLAnchorElement>(null);
+
+  const handleMaterial = useCallback(() => {
+    linkButtonRef.current?.click();
+  }, []);
+
   return (
     <Container>
       <Header>
@@ -117,9 +124,15 @@ const Home: React.FC = () => {
           initial="hidden"
           animate="visible"
           variants={itemAnimationUpY}
+          whileHover={{
+            width: 350,
+          }}
+          onClick={handleMaterial}
         >
-          <Link to="/materiais">Conheça nossos materiais</Link>
-          <FiLogIn size={25} color="#fff" />
+          <Link ref={linkButtonRef} to="/materiais">
+            Conheça nossos materiais
+          </Link>
+          <motion.img src={filogin} alt="materiais" />
         </motion.button>
       </LadingPage>
 
