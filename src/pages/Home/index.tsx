@@ -197,7 +197,7 @@ const Home: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
-              <strong>Posts frequentes</strong>
+              <strong>Artigos publicados</strong>
               <img src={studyImg} alt="Lendo um livro" />
               <p>
                 Encontre mais de{" "}
@@ -224,9 +224,15 @@ const Home: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
-              <strong>Treinamentos online</strong>
+              <strong>Aulas online</strong>
               <img src={trainingImg} alt="Felicidade" />
-              <p>Se especialize na sua aŕea com nosso material</p>
+              <p>
+                Temos mais{" "}
+                <strong>
+                  <CountUp start={0} end={257} duration={6} />{" "}
+                </strong>{" "}
+                aulas online sobre robótica{" "}
+              </p>
             </Card>
             <Card
               variants={{
@@ -245,10 +251,14 @@ const Home: React.FC = () => {
               initial="hidden"
               animate="visible"
             >
-              <strong>Empresas do mercado</strong>
+              <strong>Inpacto social</strong>
               <img src={enterpriseLogo} alt="Felicidade" />
               <p>
-                Aqui você pode buscar vagas em startup's ou empresas do mercado
+                Estamos presentes em mais de{" "}
+                <strong>
+                  <CountUp start={0} end={72} duration={6} />{" "}
+                </strong>{" "}
+                escolas
               </p>
             </Card>
           </>
