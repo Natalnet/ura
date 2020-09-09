@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.nav`
   background: transparent;
@@ -12,21 +12,22 @@ export const Container = styled.nav`
     padding: 0 21px;
 
     @media (max-width: 990px) {
-    display: none;
+      display: none;
     }
   }
-`
+`;
 
 export const DropdownStyles = styled.div`
   .dropdown-option {
     padding: 20px 25px;
     outline: 0;
-    color: #fff;
+    color: #403b3b;
     font-size: 22px;
 
     transition: opacity 0.2s;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       opacity: 0.55;
     }
   }
@@ -39,7 +40,7 @@ export const DropdownStyles = styled.div`
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 16px;
         height: 16px;
@@ -49,10 +50,10 @@ export const DropdownStyles = styled.div`
         left: -8px;
         border-radius: 4px 0 0 0;
 
-        transform: rotate(45deg)
+        transform: rotate(45deg);
       }
     }
- 
+
     .dropdown-container {
       position: absolute;
 
@@ -74,10 +75,9 @@ export const DropdownStyles = styled.div`
       width: 100%;
     }
   }
-`
+`;
 export const Login = styled(Link)`
   height: 100%;
-
 
   span {
     font-size: 18px;
@@ -89,8 +89,7 @@ export const Login = styled(Link)`
     height: 12px;
     color: #fff;
   }
-
-`
+`;
 
 export const Burguer = styled.div`
   height: 20px;
@@ -106,4 +105,4 @@ export const Burguer = styled.div`
   @media (max-width: 990px) {
     display: unset;
   }
-`
+`;
