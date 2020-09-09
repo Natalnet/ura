@@ -1,0 +1,247 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FiInstagram, FiFacebook, FiMail, FiLogIn } from "react-icons/fi";
+
+import Navbar from "../../components/NavBar";
+import Layout from "../../components/Layout";
+
+import logo from "../../assets/logo.png";
+import ideaImg from "../../assets/idea.png";
+import lampImg from "../../assets/lamp.png";
+import smileImg from "../../assets/smile.png";
+import studyImg from "../../assets/study.svg";
+import trainingImg from "../../assets/training.svg";
+import enterpriseLogo from "../../assets/school.svg";
+
+import {
+  Container,
+  Header,
+  LadingPage,
+  EnterpriseInfo,
+  Card,
+  EnterpriseAbout,
+  Footer,
+  FooterCard,
+  SocialContent,
+  SocialButton,
+} from "./styles";
+
+const itemAnimationUpY = {
+  hidden: { x: 0, y: 100, opacity: 0 },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemAnimationDownY = {
+  hidden: { x: 0, y: -100, opacity: 0 },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemAnimationLeftX = {
+  hidden: { x: 100, y: 0, opacity: 0 },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemAnimationRightX = {
+  hidden: { x: -100, y: 0, opacity: 0 },
+  visible: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.6,
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const Home: React.FC = () => {
+  return (
+    <Container>
+      <Header>
+        <Layout>
+          <Navbar />
+        </Layout>
+      </Header>
+
+      <LadingPage>
+        <motion.img
+          initial="hidden"
+          animate="visible"
+          variants={itemAnimationDownY}
+          src={logo}
+          alt="Conecta Talentos"
+        />
+        <motion.h1
+          initial="hidden"
+          animate="visible"
+          variants={itemAnimationLeftX}
+        >
+          Conheça a robótica de baixo custo!
+        </motion.h1>
+        <motion.hr
+          initial="hidden"
+          animate="visible"
+          variants={itemAnimationRightX}
+        />
+        <motion.button
+          type="button"
+          initial="hidden"
+          animate="visible"
+          variants={itemAnimationUpY}
+        >
+          <Link to="/materiais">Conheça nossos materiais</Link>
+          <FiLogIn size={25} color="#fff" />
+        </motion.button>
+      </LadingPage>
+
+      <EnterpriseInfo>
+        <Card variants={itemAnimationRightX} initial="hidden" animate="visible">
+          <strong>Mudança de Pensamento</strong>
+          <img src={lampImg} alt="Lâmpada criativa" />
+          <p>
+            oficinas em ambientes reais, possibilitando novas crenças e quebra
+            de paradigmas.
+          </p>
+        </Card>
+        <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
+          <strong>Ambientes de inovação</strong>
+          <img src={ideaImg} alt="Felicidade" />
+          <p>
+            oficinas em ambientes reais, possibilitando novas crenças e quebra
+            de paradigmas.
+          </p>
+        </Card>
+        <Card variants={itemAnimationLeftX} initial="hidden" animate="visible">
+          <strong>Competências emocionais</strong>
+          <img src={smileImg} alt="Felicidade" />
+          <p>
+            oficinas em ambientes reais, possibilitando novas crenças e quebra
+            de paradigmas.
+          </p>
+        </Card>
+        <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
+          <strong>Posts frequentes</strong>
+          <img src={studyImg} alt="Lendo um livro" />
+          <p>Encontre artigos com temas diversos sobre o mercado de trabalho</p>
+        </Card>
+        <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
+          <strong>Treinamentos online</strong>
+          <img src={trainingImg} alt="Felicidade" />
+          <p>Se especialize na sua aŕea com nosso material</p>
+        </Card>
+        <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
+          <strong>Empresas do mercado</strong>
+          <img src={enterpriseLogo} alt="Felicidade" />
+          <p>Aqui você pode buscar vagas em startup's ou empresas do mercado</p>
+        </Card>
+      </EnterpriseInfo>
+
+      <EnterpriseAbout>
+        <motion.h1
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        >
+          Sobre
+        </motion.h1>
+        <motion.hr
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        />
+        <motion.p
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        >
+          Em um mundo cada vez mais competitivo, não basta ser qualificado para
+          garantir a empregabilidade e nem basta ser empreendedor para assegurar
+          uma equipe competente. Nesse cenário, necessidades e oportunidades
+          constituem dois elos presentes simultaneamente entre os interesses dos
+          envolvidos: quem busca trabalho e quem precisa de profissionais
+          capacitados. A plataforma digital Conecta Talentos nasceu a partir
+          dessa compreensão da realidade. Nossa função social, portanto, tem
+          como objetivo promover a conexão entre as partes interessadas e,
+          assim, potencializar o processo de inserção do mercado de trabalho.
+        </motion.p>
+      </EnterpriseAbout>
+
+      <Footer>
+        <FooterCard
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        >
+          <strong>Localidade</strong>
+          <aside>
+            <p>Natal, RN</p>
+          </aside>
+        </FooterCard>
+
+        <FooterCard
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        >
+          <strong>Fale conoco</strong>
+          <SocialContent>
+            <SocialButton>
+              <FiFacebook size={25} color="#584e30" />
+            </SocialButton>
+
+            <SocialButton>
+              <FiInstagram size={25} color="#584e30" />
+            </SocialButton>
+
+            <SocialButton>
+              <FiMail size={25} color="#584e30" />
+            </SocialButton>
+          </SocialContent>
+        </FooterCard>
+
+        <FooterCard
+          variants={itemAnimationUpY}
+          initial="hidden"
+          animate="visible"
+        >
+          <strong>Equipe</strong>
+          <aside>
+            <p>Lana</p>
+            <p>Pedro</p>
+          </aside>
+        </FooterCard>
+      </Footer>
+    </Container>
+  );
+};
+
+export default Home;

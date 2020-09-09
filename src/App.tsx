@@ -1,13 +1,13 @@
 import React from "react";
 
-import "./styles/global.scss";
-
 import Routes from "./Routes";
+import { GlobalStyles } from "./styles/global";
 
 const App: React.FC = () => {
   return (
     <>
       <Routes />
+      <GlobalStyles />
     </>
   );
 };
