@@ -1,7 +1,8 @@
 import React, { useRef, useCallback } from "react";
-import { Link, LinkProps } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
+import CountUp from "react-countup";
 
 import Navbar from "../../components/NavBar";
 import Layout from "../../components/Layout";
@@ -112,7 +113,7 @@ const Home: React.FC = () => {
           animate="visible"
           variants={itemAnimationLeftX}
         >
-          Conheça a robótica de baixo custo!
+          Conheça a robótica educacional <br /> de baixo custo!
         </motion.h1>
         <motion.hr
           initial="hidden"
@@ -164,7 +165,13 @@ const Home: React.FC = () => {
         <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
           <strong>Posts frequentes</strong>
           <img src={studyImg} alt="Lendo um livro" />
-          <p>Encontre artigos com temas diversos sobre o mercado de trabalho</p>
+          <p>
+            Encontre mais de{" "}
+            <strong>
+              <CountUp start={0} end={23} duration={5} />{" "}
+            </strong>
+            artigos sobré robótica
+          </p>
         </Card>
         <Card variants={itemAnimationUpY} initial="hidden" animate="visible">
           <strong>Treinamentos online</strong>

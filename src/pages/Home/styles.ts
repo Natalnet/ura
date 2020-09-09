@@ -36,6 +36,7 @@ export const LadingPage = styled(motion.aside)`
     font-size: 62px;
     margin-bottom: 8px;
     font-weight: bold;
+    text-align: center;
   }
 
   > hr {
@@ -52,10 +53,14 @@ export const LadingPage = styled(motion.aside)`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    transition: background 0.2s;
     background: #d35dcf;
     border-radius: 25px;
 
     &:hover {
+      transition: background 0.2s;
+      background: #1953e6;
+
       > img {
         transition: opacity 0.2s;
         opacity: 1;
@@ -91,7 +96,7 @@ export const EnterpriseInfo = styled(motion.ul)`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   padding: 50px;
-  background: #584e30;
+  background: #fff;
 `;
 
 export const Card = styled(motion.li)`
