@@ -89,12 +89,17 @@ const Home: React.FC = () => {
   const linkButtonRef = useRef<HTMLAnchorElement>(null);
   const [lastYPosition, setLatYPosition] = useState(0);
   const [scroolAnimate, setScroolAnimate] = useState(false);
+  const [scroolAboutAnimate, setScroolAboutAnimate] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
       setLatYPosition(window.scrollY);
       if (window.scrollY >= 255) {
         setScroolAnimate(true);
+      }
+
+      if (window.scrollY >= 750) {
+        setScroolAboutAnimate(true);
       }
     }
     window.addEventListener("scroll", handleScroll, false);
@@ -146,7 +151,7 @@ const Home: React.FC = () => {
           }}
           onClick={handleMaterial}
         >
-          <Link ref={linkButtonRef} to="/materiais">
+          <Link ref={linkButtonRef} to="/desenvolvimento">
             Conheça nossos materiais
           </Link>
           <motion.img src={filogin} alt="materiais" />
@@ -266,33 +271,38 @@ const Home: React.FC = () => {
       </EnterpriseInfo>
 
       <EnterpriseAbout>
-        <motion.h1
-          variants={itemAnimationUpY}
-          initial="hidden"
-          animate="visible"
-        >
-          Sobre
-        </motion.h1>
-        <motion.hr
-          variants={itemAnimationUpY}
-          initial="hidden"
-          animate="visible"
-        />
-        <motion.p
-          variants={itemAnimationUpY}
-          initial="hidden"
-          animate="visible"
-        >
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-        </motion.p>
+        {scroolAboutAnimate && (
+          <>
+            <motion.h1
+              variants={itemAnimationUpY}
+              initial="hidden"
+              animate="visible"
+            >
+              Sobre
+            </motion.h1>
+            <motion.hr
+              variants={itemAnimationUpY}
+              initial="hidden"
+              animate="visible"
+            />
+            <motion.p
+              variants={itemAnimationUpY}
+              initial="hidden"
+              animate="visible"
+            >
+              It is a long established fact that a reader will be distracted by
+              the readable content of a page when looking at its layout. The
+              point of using Lorem Ipsum is that it has a more-or-less normal
+              distribution of letters, as opposed to using 'Content here,
+              content here', making it look like readable English. Many desktop
+              publishing packages and web page editors now use Lorem Ipsum as
+              their default model text, and a search for 'lorem ipsum' will
+              uncover many web sites still in their infancy. Various versions
+              have evolved over the years, sometimes by accident, sometimes on
+              purpose (injected humour and the like).
+            </motion.p>
+          </>
+        )}
       </EnterpriseAbout>
 
       <Footer>
@@ -301,18 +311,7 @@ const Home: React.FC = () => {
           initial="hidden"
           animate="visible"
         >
-          <strong>Localidade</strong>
-          <aside>
-            <p>Natal, RN</p>
-          </aside>
-        </FooterCard>
-
-        <FooterCard
-          variants={itemAnimationUpY}
-          initial="hidden"
-          animate="visible"
-        >
-          <strong>Fale conoco</strong>
+          <strong>Redes Sociais</strong>
           <SocialContent>
             <SocialButton>
               <FiFacebook size={25} color="#584e30" />
@@ -326,18 +325,6 @@ const Home: React.FC = () => {
               <FiMail size={25} color="#584e30" />
             </SocialButton>
           </SocialContent>
-        </FooterCard>
-
-        <FooterCard
-          variants={itemAnimationUpY}
-          initial="hidden"
-          animate="visible"
-        >
-          <strong>Equipe</strong>
-          <aside>
-            <p>Lana</p>
-            <p>Pedro</p>
-          </aside>
         </FooterCard>
       </Footer>
     </Container>

@@ -163,7 +163,7 @@ export const EnterpriseAbout = styled.div`
 
 export const Footer = styled.footer`
   width: 100%;
-  background: #b9b67f;
+  background: #fff;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -192,7 +192,7 @@ export const FooterCard = styled(motion.div)`
     flex-direction: column;
 
     > p {
-      color: #584e30;
+      color: #403b3b;
       font-size: 20px;
     }
   }
@@ -210,7 +210,7 @@ export const SocialButton = styled(motion.div)`
   width: 42px;
   height: 42px;
   background: transparent;
-  border: 2px solid #584e30;
+  border: 2px solid #403b3b;
   border-radius: 50%;
 
   display: flex;
@@ -223,6 +223,6 @@ export const SocialButton = styled(motion.div)`
   transition: background 0.2s;
 
   &:hover {
-    background: #c7e466;
+    background: #95a9c9;
   }
 `;
