@@ -313,16 +313,22 @@ const Home: React.FC = () => {
         >
           <strong>Redes Sociais</strong>
           <SocialContent>
-            <SocialButton>
-              <FiFacebook size={25} color="#584e30" />
+            <SocialButton
+              target="_blank"
+              href="https://www.facebook.com/URAUFRN"
+            >
+              <FiFacebook size={25} color="#403b3b" />
+            </SocialButton>
+
+            <SocialButton
+              target="_blank"
+              href="https://www.instagram.com/umroboporaluno"
+            >
+              <FiInstagram size={25} color="#403b3b" />
             </SocialButton>
 
             <SocialButton>
-              <FiInstagram size={25} color="#584e30" />
-            </SocialButton>
-
-            <SocialButton>
-              <FiMail size={25} color="#584e30" />
+              <FiMail size={25} color="#403b3b" />
             </SocialButton>
           </SocialContent>
         </FooterCard>

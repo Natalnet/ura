@@ -206,7 +206,7 @@ export const SocialContent = styled(motion.div)`
   align-items: center;
 `;
 
-export const SocialButton = styled(motion.div)`
+export const SocialButton = styled(motion.a)`
   width: 42px;
   height: 42px;
   background: transparent;
