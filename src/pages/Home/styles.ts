@@ -12,7 +12,6 @@ export const Header = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
 `;
 
 export const LadingPage = styled(motion.aside)`
@@ -25,9 +24,18 @@ export const LadingPage = styled(motion.aside)`
 
   padding: 100px 0 30px;
 
+  @media (max-width: 900px) {
+    padding: 0;
+  }
+
   > img {
     width: 420px;
     height: 320px;
+
+    @media (max-width: 900px) {
+      width: 300px;
+      height: 214px;
+    }
   }
 
   > h1 {
@@ -37,6 +45,10 @@ export const LadingPage = styled(motion.aside)`
     margin-bottom: 8px;
     font-weight: bold;
     text-align: center;
+
+    @media (max-width: 900px) {
+      font-size: 48px;
+    }
   }
 
   > hr {
@@ -97,6 +109,17 @@ export const EnterpriseInfo = styled(motion.ul)`
   grid-template-rows: repeat(2, 1fr);
   padding: 50px;
   background: #fff;
+
+  @media (max-width: 1300px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0px;
+  }
 `;
 
 export const Card = styled(motion.li)`
@@ -108,6 +131,11 @@ export const Card = styled(motion.li)`
   justify-content: space-evenly;
   align-items: center;
   border-radius: 15px;
+
+  @media (max-width: 900px) {
+    padding: 0 10px;
+    width: 350px;
+  }
 
   > strong {
     font-size: 26px;
@@ -136,6 +164,10 @@ export const EnterpriseAbout = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 100px 255px;
+
+  @media (max-width: 900px) {
+    padding: 0 20px;
+  }
 
   > h1 {
     color: #403b3b;
@@ -169,6 +201,10 @@ export const Footer = styled.footer`
   justify-content: space-around;
   align-items: center;
   padding: 50px 250px;
+
+  @media (max-width: 900px) {
+    padding: 35px 50px;
+  }
 `;
 
 export const FooterCard = styled(motion.div)`

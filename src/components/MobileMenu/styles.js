@@ -1,15 +1,15 @@
-import styled from 'styled-components';
-import { MdClose } from 'react-icons/md'
+import styled from "styled-components";
+import { MdClose } from "react-icons/md";
 
 export const Container = styled.div`
-  display: ${({ open }) => open ? 'block' : 'none'};
+  display: ${({ open }) => (open ? "block" : "none")};
 
   position: relative;
   width: 95%;
   height: 400px;
   border-radius: 4px;
   z-index: 50;
-  top: 12px;
+  top: 180px;
   margin: 0 auto;
 
   background: #fff;
@@ -18,7 +18,6 @@ export const Container = styled.div`
   @media (min-width: 990px) {
     display: none;
   }
-
 `;
 
 export const CloseButton = styled(MdClose)`
@@ -29,8 +28,8 @@ export const CloseButton = styled(MdClose)`
   top: 5px;
   right: 5px;
 
-  color: #5533ff;
-`
+  color: #403b3b;
+`;
 
 export const HeaderTitle = styled.div`
   width: 100%;
@@ -39,10 +38,10 @@ export const HeaderTitle = styled.div`
 
   h1 {
     text-transform: uppercase;
-    color: #8898AA;
+    color: #8898aa;
     font-size: 17px;
   }
-`
+`;
 
 export const AulasContent = styled.div`
   display: flex;
@@ -54,7 +53,6 @@ export const AulasContent = styled.div`
   @media (max-width: 300px) {
     flex-direction: column;
   }
-
 
   div {
     width: 100%;
@@ -70,11 +68,10 @@ export const AulasContent = styled.div`
 
       span {
         display: inline-block;
-          width: 24px;
-          height: 24px;
-          border-radius: 50%;
-          background: #80b9f9;
-
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #80b9f9;
       }
 
       p {
@@ -85,4 +82,4 @@ export const AulasContent = styled.div`
       }
     }
   }
-`
+`;
